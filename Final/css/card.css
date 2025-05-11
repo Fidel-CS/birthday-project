@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+body {
+    background: #6c63ff;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    padding: 1em;
+}
+
+.card {
+    background: #fdfdfd;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* selalu vertikal */
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    overflow: hidden;
+    margin: 1em;
+    animation: fadeIn 0.8s ease;
+}
+
+img.birthday {
+    max-height: 60vh;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+.text {
+    padding: 1em;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.muted {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.space {
+    height: 100px;
+}
+
+/* Mobile Phones (max-width: 767px) */
+@media (max-width: 450px) {
+    .card {
+        padding: 1.5em;
+    }
+    
+    img.birthday {
+        max-height: 40vh;
+    }
+    
+    .text {
+        font-size: 1rem;
+    }
+
+    .muted {
+        opacity: 0.8;
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablets (min-width: 768px) */
+@media (max-width: 768px) {
+    .card {
+        padding: 1em; /* reduced padding */
+    }
+    
+    img.birthday {
+        max-height: 30vh; /* reduced image height to fit */
+        width: 100%; /* make image fully responsive width */
+        object-fit: contain;
+    }
+    
+    .text {
+        font-size: 1.2rem; /* smaller font size */
+        line-height: 1.1;
+    }
+
+    .muted {
+        opacity: 0.8;
+        font-size: 1.1rem;
+    }
+}
+
+/* Laptops (min-width: 992px) */
+@media (max-width: 1366px) {
+    .card {
+        padding: 3em;
+    }
+
+    img.birthday {
+        max-height: 65vh;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+
+    .muted {
+        opacity: 0.8;
+        font-size: 1.4rem;
+    }
+}
+
+/* Desktops (min-width: 1200px) */
+@media (max-width: 1920px) {
+    .text {
+        font-size: 1.5rem;
+    }
+
+    .muted {
+        opacity: 0.8;
+        font-size: 1.4rem;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+

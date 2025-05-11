@@ -1,0 +1,25 @@
+/* Extra Custom Styles (Opsional) */
+body {
+    font-family: 'Shippori Antique', sans-serif;
+  }
+  
+  .halo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  #kadoIn img {
+    cursor: pointer;
+  }
+  
+  .kumpulanstiker img {
+    display: none; /* Awalnya sembunyi */
+  }
+  
+  .sembunyi {
+    display: none;
+  }
+
+  /* Bisa kamu tambah atau sesuaikan lagi */
+  
